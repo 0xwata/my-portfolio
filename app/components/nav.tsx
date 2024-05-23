@@ -7,8 +7,8 @@ const navItems = {
   '/blog': {
     name: 'blog',
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
+  'https://0xwata.notion.site/57b63aade5a245799877ef94e6b9c88d?v=d628db32357542f0879887aaafee4894': {
+    name: 'checklist',
   },
 }
 
