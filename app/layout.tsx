@@ -4,7 +4,7 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
-import { MantineProvider, ColorSchemeScript } from '@mantine/core'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 
 export const metadata: Metadata = {
   title: 'midnitght tech',
@@ -20,12 +20,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <ColorSchemeScript />
       </head>
-      <body>
+      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
-          <MantineProvider children={children} withCssVariables />
+          <AppRouterCacheProvider>
+            {children}
+          </AppRouterCacheProvider>
           <Footer />
           <Analytics />
           <SpeedInsights />
