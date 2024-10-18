@@ -1,7 +1,7 @@
 import { BlogPosts } from 'app/components/posts'
 import { ExperienceTimeline, EducationTimeline } from 'app/components/Timeline'
 import { Flex, Container, Space, NavLink } from '@mantine/core'
-import Guide from 'app/components/Guide'
+import { InternalGuide, ExternalGuide } from 'app/components/Guide'
 import SocialIcons from 'app/components/SocialIcons'
 
 export default function Page() {
@@ -17,13 +17,15 @@ export default function Page() {
             <h3 className='text-lg text-slate-400 w-3/4'>I build user-friendly and functional digital experiences.</h3>
 
             <div className='my-20'>
-              <Guide title="ABOUT" id="#about" />
+              <InternalGuide title="ABOUT" id="#about" />
               <Space h="20" />
-              <Guide title="EXPERIENCE" id="#experience" />
+              <InternalGuide title="EXPERIENCE" id="#experience" />
               <Space h="20" />
-              <Guide title="EDUCATION" id="#education" />
+              <InternalGuide title="EDUCATION" id="#education" />
               <Space h="20" />
-              <Guide title="PROJECTS" id="#education" />
+              <InternalGuide title="PROJECTS" id="#education" />
+              <Space h="20" />
+              <ExternalGuide title="CHECKLIST" link="https://0xwata.notion.site/57b63aade5a245799877ef94e6b9c88d?v=d628db32357542f0879887aaafee4894" />
             </div>
             {/* <div className="my-8">
               <BlogPosts />
