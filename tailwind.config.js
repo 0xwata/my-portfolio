@@ -4,7 +4,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#ffffff',  // 白色を `primary` に設定
+      },
+    },
   },
   plugins: [],
 }

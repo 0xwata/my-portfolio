@@ -1,15 +1,24 @@
 import './global.css'
+import '@mantine/core/styles.css';
 import type { Metadata } from 'next'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { createTheme, MantineProvider } from '@mantine/core';
 import Footer from './components/footer'
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 
 export const metadata: Metadata = {
-  title: 'midnitght tech',
-  description: 'midnitght tech',
+  title: 'Wataru Takamine',
+  description: 'Wataru Takamine is a software engineer focused on building user-friendly and functional digital experiences. Driven by a passion for continuous learning and improvement, I applies my expertise to create impactful and innovative products.',
 }
+
+const theme = createTheme({
+  /** Put your mantine theme override here */
+  primaryColor: 'teal',
+
+
+});
+
 
 export default function RootLayout({
   children,
@@ -21,13 +30,11 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
       </head>
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
-          <AppRouterCacheProvider>
+      <body className="mx-10 focus:bg-[#111e40] bg-[#0F172A]">
+        <main className="mx-20 min-w-0">
+          <MantineProvider theme={theme}>
             {children}
-          </AppRouterCacheProvider>
-          <Footer />
+          </MantineProvider>
           <Analytics />
           <SpeedInsights />
         </main>

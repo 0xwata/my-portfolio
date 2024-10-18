@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* MantineのButtonコンポーネントのスタイルと競合している場所を変更 */
+@layer tailwind {
+  @tailwind base;
+}
+
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
