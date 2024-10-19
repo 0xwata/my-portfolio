@@ -2,11 +2,17 @@
 import TimelineCard from "./TimelineCard";
 import { Flex } from "@mantine/core";
 
-export const ExperienceTimeline = () => {
+
+interface ExperienceTimelineProps {
+    isSp: boolean;
+}
+
+export const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ isSp }) => {
 
     return (
         <Flex direction={"column"}>
             <TimelineCard
+                isSp={isSp}
                 title={'Co-Founder & CTO'}
                 affiliation={'Leapify, Inc.'}
                 date={'2024 - Present'}
@@ -16,6 +22,7 @@ export const ExperienceTimeline = () => {
                 tags={['Python', 'Supabase', 'ChatGPT', 'Google App Script', 'Substack', 'Stripe']}
             />
             <TimelineCard
+                isSp={isSp}
                 title={'Blockchain Engineer'}
                 affiliation={'SARAH, Inc.'}
                 date={'2023 - Present'}
@@ -25,6 +32,7 @@ Built a Blockchain Indexer using Subquery and AWS CDK to efficiently manage and 
                 tags={['TypeScript', 'Avalanche', 'AvaCloud', 'SubQuery', 'AWS CDK', 'AWS ECS', 'AWS ECR', 'EVM']}
             />
             <TimelineCard
+                isSp={isSp}
                 title={'FullStack Engineer'}
                 affiliation={'Forward, Inc.'}
                 date={'2023 - 2024'}
@@ -34,6 +42,7 @@ Built a Blockchain Indexer using Subquery and AWS CDK to efficiently manage and 
                 tags={['Next.js', 'React', 'TypeScript', 'Node.js', 'GraphQL', 'PostgreSQL', 'AWS Lambda', 'AWS ECS', 'AWS CDK']}
             />
             <TimelineCard
+                isSp={isSp}
                 title={'Android Engineer'}
                 affiliation={'DMM.com, LLC'}
                 date={'2020 - 2023'}
@@ -50,11 +59,18 @@ Built a Blockchain Indexer using Subquery and AWS CDK to efficiently manage and 
     );
 }
 
-export const EducationTimeline = () => {
+interface EducationTimelineProps {
+    isSp: boolean;
+}
+
+
+
+export const EducationTimeline: React.FC<EducationTimelineProps> = ({ isSp }) => {
 
     return (
         <Flex direction={"column"}>
             <TimelineCard
+                isSp={isSp}
                 title={'Master of Engineering / Technology Management for Innovation'}
                 affiliation={'The University of Tokyo '}
                 date={'2018 - 2020'}
@@ -65,6 +81,7 @@ export const EducationTimeline = () => {
                 tags={['Python', 'NLP', 'BERT', 'Text Mining', 'Finance', 'ProtoTyping']}
             />
             <TimelineCard
+                isSp={isSp}
                 title={'Bachelor of Engineering / Mechanical and Aerpospace Engineering'}
                 affiliation={'Tohoku University'}
                 date={'2014 - 2018'}
@@ -78,6 +95,7 @@ export const EducationTimeline = () => {
                 tags={['Python', 'Image Processing', 'Robotics', 'Space Exploration', 'Mechanical Engineering']}
             />
             <TimelineCard
+                isSp={isSp}
                 title={'Bachelor of Engineering / Mechanical and Aerpospace Engineering'}
                 affiliation={'University of California, Irvine'}
                 date={'2016 - 2017'}

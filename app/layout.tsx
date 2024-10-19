@@ -30,8 +30,8 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
       </head>
-      <body className="mx-10 focus:bg-[#111e40] bg-[#0F172A]">
-        <main className="mx-20 min-w-0">
+      <body className=" focus:bg-[#111e40] bg-[#0F172A]">
+        <main className="">
           <MantineProvider theme={theme}>
             {children}
           </MantineProvider>
