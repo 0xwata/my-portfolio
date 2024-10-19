@@ -10,6 +10,16 @@ import Footer from './components/footer'
 export const metadata: Metadata = {
   title: 'Wataru Takamine',
   description: 'Wataru Takamine is a software engineer focused on building user-friendly and functional digital experiences. Driven by a passion for continuous learning and improvement, I applies my expertise to create impactful and innovative products.',
+  openGraph: {
+    images: [
+      {
+        url: '/icon.ico', // パスは配列で指定します
+        width: 800, // 推奨サイズ（任意）
+        height: 800, // 推奨サイズ（任意）
+        alt: 'Wataru Takamine Icon', // alt属性（任意）
+      },
+    ],
+  }
 }
 
 const theme = createTheme({
