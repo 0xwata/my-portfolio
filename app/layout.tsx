@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/icon.ico', // パスは配列で指定します
+        url: '/icon.png', // パスは配列で指定します
         width: 800, // 推奨サイズ（任意）
         height: 800, // 推奨サイズ（任意）
         alt: 'Wataru Takamine Icon', // alt属性（任意）
