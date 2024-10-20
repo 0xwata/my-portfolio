@@ -1,8 +1,10 @@
 'use client'
-import { Flex, Space } from "@mantine/core"
+import { Flex, Space, AspectRatio } from "@mantine/core"
 import { InternalGuide, ExternalGuide } from "./Guide"
 import SocialIcons from "./SocialIcons"
 import { ExperienceTimeline, EducationTimeline } from 'app/components/Timeline'
+import Projects from "./Projects"
+import Rotating3DComponent from "./RotatingGLBModel"
 
 const PcComponent: React.FC = () => {
     return (
@@ -15,7 +17,7 @@ const PcComponent: React.FC = () => {
                                 Wataru Takamine
                             </h1>
                             <h2 className='mb-4 text-2xl text-white'>Software Engineer/ Entrepreneur</h2>
-                            <h3 className='text-lg text-slate-400 w-3/4'>I build user-friendly and functional digital experiences.</h3>
+                            <h3 className='text-lg text-slate-400 w-3/4'>I continue creating products as naturally as I breathe throughout my life.</h3>
 
                             <div className='my-20'>
                                 <InternalGuide title="ABOUT" id="#about" />
@@ -24,7 +26,7 @@ const PcComponent: React.FC = () => {
                                 <Space h="20" />
                                 <InternalGuide title="EDUCATION" id="#education" />
                                 <Space h="20" />
-                                <InternalGuide title="PROJECTS" id="#education" />
+                                <InternalGuide title="PROJECTS" id="#projects" />
                                 <Space h="20" />
                                 <ExternalGuide title="CHECKLIST" link="https://0xwata.notion.site/57b63aade5a245799877ef94e6b9c88d?v=d628db32357542f0879887aaafee4894" />
                             </div>
@@ -61,12 +63,27 @@ const PcComponent: React.FC = () => {
                             </div>
                         </section>
                         <section id='projects'>
+                            <div className='py-20'>
+                                <Projects isSp={false} />
+                            </div>
                         </section>
                         <section >
                             <div>
                                 <p className='text-base mb-20 text-slate-400 w-3/4'>
                                     Loosely coded in <span className='text-white'>Visual Studio Code</span> by yours trully with. Built with <span className='text-white'>Next.js</span> and <span className='text-white'>Mantine UI</span>, and <span className='text-white'>TailWind CSS</span>, deployed with and <span className='text-white'>Vercel</span>.
                                 </p>
+                            </div>
+                        </section>
+                        <section >
+                            <div className="w-full flex justify-end">
+                                <div className="w-1/4">
+                                    <AspectRatio ratio={1600 / 900} maw={200} >
+                                        <img
+                                            src={'./icon-transparent.png'}
+                                            alt="project image"
+                                        />
+                                    </AspectRatio>
+                                </div>
                             </div>
                         </section>
                     </div>
