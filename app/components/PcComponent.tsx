@@ -27,7 +27,7 @@ const PcComponent: React.FC = () => {
                                 <Space h="20" />
                                 <InternalGuide title="PROJECTS" id="#projects" />
                                 <Space h="20" />
-                                <ExternalGuide title="CHECKLIST" link="https://0xwata.notion.site/57b63aade5a245799877ef94e6b9c88d?v=d628db32357542f0879887aaafee4894" />
+                                <ExternalGuide title="CHECKLIST" link="https://good-waxflower-f75.notion.site/2b6aa9705b664694903d9e481447d576?v=a096d492be9241efa948415548f861b8" />
                             </div>
                         </section>
                     </div>
