@@ -41,12 +41,6 @@ ONIGIRI Chain is a blockchain dedicated to collecting and storing information on
                 affiliation="Associated with DMM.com LLC"
                 imageURL="./dmmtv.png"
                 description="
-DMM TV
-DMM TV
-Jul 2021 - Jul 2023Jul 2021 - Jul 2023
-
-Associated with DMM.com Group
-Associated with DMM.com Group
 DMM TV is a video streaming service by DMM.com, offering a wide range of content including anime, movies, dramas, and variety shows. It's known for its strong anime selection, including exclusive titles. Users can stream or download content on various devices, and it operates on a subscription model with a monthly fee for unlimited access.
 I was responsible for developing the content details screen in the DMM TV Android app using Jetpack Compose. This screen was the most complex in the app, requiring me to lead the mapping of fields from the GraphQL schema to UI elements alongside other client-side engineers. On the web, I also handled the implementation to retrieve necessary data via Apollo.
 
@@ -67,7 +61,7 @@ The experience is mainly for two persons, but the audience also goes through a n
 Building upon this,’multi-lingua-body’ was born. Based on Minori's vision, this work expands the concept to break language barriers by introducing multilingual support. When participants select a word in their native language, a rhyming phrase in another language is read aloud, enabling cross-linguistic communication through rhyme. In this project, I was primarily responsible for extracting rhyming phrases from Aozora Bunko, establishing relationships between phrases, and handling the multilingual integration.
 
 ’Multi-lingua-body’ was also exhibited at SIGGRAPH ASIA 2022, where it received much recognition for its innovative approach."
-                tags={["Interactive Art", "NLP", "Python"]}
+                tags={["Interactive Art", "NLP", "Python", "SIGGRAPH"]}
             />
         </div>
     );
