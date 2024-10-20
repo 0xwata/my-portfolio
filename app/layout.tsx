@@ -9,7 +9,7 @@ import Footer from './components/footer'
 
 export const metadata: Metadata = {
   title: 'Wataru Takamine',
-  description: 'Wataru Takamine is a software engineer focused on building user-friendly and functional digital experiences. Driven by a passion for continuous learning and improvement, I applies my expertise to create impactful and innovative products.',
+  description: 'Wataru Takamine is a software engineer. I continue creating products as naturally as I breathe throughout my life.',
   openGraph: {
     type: "website",
     images: [
