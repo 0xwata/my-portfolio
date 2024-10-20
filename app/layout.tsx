@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: '/assets/icon.png', // パスは配列で指定します
+        url: '/assets/ogp.png', // パスは配列で指定します
         type: 'image/png', // 画像の種類（任意）
         width: 1200, // 推奨サイズ（任意）
         height: 630, // 推奨サイズ（任意）
