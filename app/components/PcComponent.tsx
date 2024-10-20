@@ -4,7 +4,6 @@ import { InternalGuide, ExternalGuide } from "./Guide"
 import SocialIcons from "./SocialIcons"
 import { ExperienceTimeline, EducationTimeline } from 'app/components/Timeline'
 import Projects from "./Projects"
-import Rotating3DComponent from "./RotatingGLBModel"
 
 const PcComponent: React.FC = () => {
     return (
