@@ -33,7 +33,7 @@ const SpComponent: React.FC = () => {
                             I find great joy in creating valuable software while crossing boundaries between <span className='text-white'>design</span>, <span className='text-white'>engineering</span>, and <span className='text-white'>business</span>.
                         </p>
                         <p className='text-lg text-slate-400'>
-                            Outside of work, I enjoy swimming, reading, spending time with my girlfriend, and studying <span className='text-white'>English</span>.
+                            Outside of work, I enjoy swimming, reading, Listening to radio and studying <span className='text-white'>English</span>.
                         </p>
                     </div>
                 </section>
