@@ -4,6 +4,7 @@ import { InternalGuide, ExternalGuide } from "./Guide"
 import SocialIcons from "./SocialIcons"
 import { ExperienceTimeline, EducationTimeline } from 'app/components/Timeline'
 import Projects from "./Projects"
+import ResumeButton from "./ResumeButton"
 
 const SpComponent: React.FC = () => {
     return (
@@ -38,12 +39,11 @@ const SpComponent: React.FC = () => {
                     </div>
                 </section>
                 <section id='experience'>
-                    <div className="text-base text-white font-bold mb-7">EXPERIENCE</div>
+                    <div className="text-base text-white font-bold mb-10">EXPERIENCE</div>
                     <div className=''>
                         <ExperienceTimeline isSp={true} />
-                        <Space h="20" />
-                        <div>
-                        </div>
+                        <ResumeButton />
+                        <Space h="40" />
                     </div>
                 </section>
                 <section id='education'>
