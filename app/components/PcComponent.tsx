@@ -3,6 +3,7 @@ import { Flex, Space, AspectRatio } from "@mantine/core"
 import { InternalGuide, ExternalGuide } from "./Guide"
 import SocialIcons from "./SocialIcons"
 import { ExperienceTimeline, EducationTimeline } from 'app/components/Timeline'
+import ResumeButton from '../components/ResumeButton';
 import Projects from "./Projects"
 
 const PcComponent: React.FC = () => {
@@ -56,6 +57,8 @@ const PcComponent: React.FC = () => {
                                 <ExperienceTimeline isSp={false} />
                                 <Space h="20" />
                                 <div>
+                                    < ResumeButton />
+                                    <Space h="20" />
                                 </div>
                             </div>
                         </section>

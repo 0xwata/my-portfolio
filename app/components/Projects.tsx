@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
                 isSp={isSp}
                 title="ONIGIRI Chain"
                 affiliation="Associated with SARAH, Inc."
-                imageURL="./onigirichain.png"
+                imageURL="./assets/onigirichain.png"
                 description="
 A Blockchain Specialized in Food and Healthcare.
 ONIGIRI Chain is a blockchain dedicated to collecting and storing information on food and healthcare. By centralizing a wide range of consumer behavior data on the blockchain, it aims to become the protocol for food and healthcare data, serving as a foundation for creating new value."
@@ -23,7 +23,7 @@ ONIGIRI Chain is a blockchain dedicated to collecting and storing information on
                 isSp={isSp}
                 title="AI Product Report"
                 affiliation="Associated with Leapify, Inc."
-                imageURL="./aiproductreport.png"
+                imageURL="./assets/aiproductreport.png"
                 description="The AI Trend Report is a website that provides the latest trends and information about artificial intelligence in Japanese. This project comprehensively covers domestic and international AI news, trend analyses, and practical use cases, regularly updating content. It aims to offer opportunities for technicians, business professionals, researchers, and AI enthusiasts to deepen their understanding of AI technological advancements and their impacts."
                 tags={["Python", "Supabase", "Google App Script", "ChatGPT", "Substack", "Stripe"]}
             />
@@ -31,7 +31,7 @@ ONIGIRI Chain is a blockchain dedicated to collecting and storing information on
                 isSp={isSp}
                 title="AceJob"
                 affiliation="Associated with Forward, Inc."
-                imageURL="./acejob.png"
+                imageURL="./assets/acejob.png"
                 description="AceJob is a platform that helps companies optimize their recruiting processes by automating and streamlining various tasks. It offers solutions for managing job posts, candidate screening, and application tracking, reducing manual work and improving efficiency in the hiring pipeline. The service integrates seamlessly with existing tools and aims to enhance the overall recruitment experience for both employers and candidates"
                 tags={["Typescript", "ChatGPT", "Claude", "AWS CDK", "AWS ECS", "AWS Lambda", "Next.js", "React", "Prisma"]}
             />
@@ -39,7 +39,7 @@ ONIGIRI Chain is a blockchain dedicated to collecting and storing information on
                 isSp={isSp}
                 title="DMM TV"
                 affiliation="Associated with DMM.com LLC"
-                imageURL="./dmmtv.png"
+                imageURL="./assets/dmmtv.png"
                 description="
 DMM TV is a video streaming service by DMM.com, offering a wide range of content including anime, movies, dramas, and variety shows. It's known for its strong anime selection, including exclusive titles. Users can stream or download content on various devices, and it operates on a subscription model with a monthly fee for unlimited access.
 I was responsible for developing the content details screen in the DMM TV Android app using Jetpack Compose. This screen was the most complex in the app, requiring me to lead the mapping of fields from the GraphQL schema to UI elements alongside other client-side engineers. On the web, I also handled the implementation to retrieve necessary data via Apollo.
@@ -51,7 +51,7 @@ During development, I addressed performance issues, including slow API response 
                 isSp={isSp}
                 title="Inwofumu | multi-lingua-body"
                 affiliation="Associated with Manabe Minori"
-                imageURL="./inwofumu.png"
+                imageURL="./assets/inwofumu.png"
                 description="
 Inwofumu | multi-lingua-body
 Inwofumu | multi-lingua-body
