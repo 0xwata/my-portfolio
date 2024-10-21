@@ -24,9 +24,11 @@ const SpComponent: React.FC = () => {
                 <section id='about' className='py-20'>
                     <div className="text-lg text-white font-bold mb-8">ABOUT</div>
                     <div>
-                        <p className='text-lg mb-3 text-slate-400 '>
-                            I made the decision to fully immerse myself in coding and web development. Since then, I’ve been building software for <span className='text-white'>large enterprises</span>, <span className='text-white'>startups</span>, and <span className='text-white'>my own company </span>.
+                        <p className="text-lg mb-3 text-slate-400">
+                            <span className='text-white text-4xl mr-3 '>1994</span>, The year I was born, was actually a very important year for <span className='text-white'>the internet</span> and <span className='text-white'>technology</span> in general. It was the year when the information revolution truly started to go mainstream. Netscape launched its browser, Jeff Bezos quit his job to start Amazon, the White House in the United States created its very first website, and, Lionel Messi was just 7 years old at the time, beginning his journey in football.
                         </p>
+                        <p className='text-lg mb-3 text-slate-400 '>
+                            I made the decision to fully immerse myself in internet and technology. Since then, I’ve been building software for <span className='text-white'>large enterprises</span>, <span className='text-white'>startups</span>, and <span className='text-white'>my own company</span>, occasionally seeking comfort while continuously pushing the boundaries of my potential.                        </p>
                         <p className='text-lg mb-3 text-slate-400'>
                             I find great joy in creating valuable software while crossing boundaries between <span className='text-white'>design</span>, <span className='text-white'>engineering</span>, and <span className='text-white'>business</span>.
                         </p>
