@@ -70,7 +70,7 @@ const SpComponent: React.FC = () => {
                         <div className="w-1/4">
                             <AspectRatio ratio={1600 / 900} maw={200} >
                                 <img
-                                    src={'./icon-transparent.png'}
+                                    src={'./assets/icon-transparent.png'}
                                     alt="project image"
                                 />
                             </AspectRatio>
