@@ -18,11 +18,6 @@ const SocialIcons = () => {
                 <FaFacebook size={24} />
             </a>
 
-            {/* Instagram */}
-            <a href="https://instagram.com/0xwata" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-400 transition duration-300">
-                <FaInstagram size={24} />
-            </a>
-
             {/* X (formerly Twitter) */}
             <a href="https://twitter.com/0xwata" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-teal-400 transition duration-300">
                 <FaXTwitter size={24} />
