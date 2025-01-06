@@ -13,11 +13,20 @@ export const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ isSp }) 
         <Flex direction={"column"}>
             <TimelineCard
                 isSp={isSp}
+                title={'PM & FullStack Engineer'}
+                affiliation={'Forward, Inc.'}
+                date={'2025 - Present'}
+                description={`Rejoined Forward, Inc. as an Engineer and Project Manager to lead and contribute to technical projects while managing cross-departmental collaboration.
+Driving strategic initiatives to enhance development processes and deliver impactful solutions aligning with organizational goals.`}
+                tags={['Project Management', 'Next.js', 'React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS Lambda', 'AWS ECS', 'AWS CDK']}
+            />
+            <TimelineCard
+                isSp={isSp}
                 title={'Co-Founder & CTO'}
                 affiliation={'Leapify, Inc.'}
-                date={'2024 - Present'}
+                date={'2024 - 2024'}
                 description={`Co-founded Leapify Inc. as the CTO, developing the automated trend report service using Python, ChatGPT API,
-                    Supabase, and Google Apps Script. Led the tech team in creating monthly AI product reports for sale preparation, 
+                    Supabase, and Google Apps Script. Archived successful business exit through a small scale M&A in japanese market. Led the tech team in creating monthly AI product reports for sale preparation, 
                     showcasing expertise in automation and AI technologies. Sole member of the development team, handling all implementation independently.`}
                 tags={['Python', 'Supabase', 'ChatGPT', 'Google App Script', 'Substack', 'Stripe']}
             />
@@ -25,7 +34,7 @@ export const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ isSp }) 
                 isSp={isSp}
                 title={'Blockchain Engineer'}
                 affiliation={'SARAH, Inc.'}
-                date={'2023 - Present'}
+                date={'2023 - 2024'}
                 description={`Developed Onigiri Chain and Omochi Chain on Avalanche, pioneering blockchain solutions in Japan.
 Led a web3 engineering team, focusing on app development, particularly in infrastructure and backend.
 Built a Blockchain Indexer using Subquery and AWS CDK to efficiently manage and index blockchain data.`}

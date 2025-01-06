@@ -3,6 +3,7 @@ import { Flex, Badge, AspectRatio } from "@mantine/core";
 
 type ProjectCardProps = {
     isSp: boolean;
+    isExit: boolean;
     title: string;
     affiliation: string;
     imageURL: string;
@@ -10,7 +11,7 @@ type ProjectCardProps = {
     tags: string[];
 };
 
-const ProjectCard = ({ isSp, title, affiliation, imageURL, description, tags }: ProjectCardProps) => {
+const ProjectCard = ({ isSp, isExit, title, affiliation, imageURL, description, tags }: ProjectCardProps) => {
     if (isSp) {
         return (
             <Flex
@@ -20,6 +21,7 @@ const ProjectCard = ({ isSp, title, affiliation, imageURL, description, tags }: 
                 className="mb-8 transition duration-300 ease-in-out transform hover:bg-slate-800 hover:shadow-lg hover:scale-[1.02] rounded-2xl p-4 group"
             >
                 <div className="">
+                    {isExit && <Badge color="orange">🚀 Exit</Badge>}
                     <h3 className="font-semibold text-white group-hover:text-[#5CE6D1] mb-1">{title}</h3>
                     <p className="text-sm font-light text-slate-200 mb-3">{affiliation}</p>
                     <p className="text-sm font-light text-slate-200 mb-2">{description}</p>
@@ -63,7 +65,10 @@ const ProjectCard = ({ isSp, title, affiliation, imageURL, description, tags }: 
                     </AspectRatio>
                 </div>
                 <div className="w-3/4">
-                    <h3 className="font-semibold text-white group-hover:text-[#5CE6D1] mb-1">{title}</h3>
+                    <div className="flex flex-row items-center">
+                        <h3 className="font-semibold text-white group-hover:text-[#5CE6D1] mb-1">{title}</h3>
+                        {isExit && <Badge className="ml-2" color="orange">🚀 Exit</Badge>}
+                    </div>
                     <p className="text-sm font-light text-slate-200 mb-3">{affiliation}</p>
                     <p className="text-sm font-light text-slate-200 mb-2">{description}</p>
                     <div className="flex flex-wrap gap-2">
