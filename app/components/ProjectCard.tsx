@@ -1,5 +1,6 @@
 
 import { Flex, Badge, AspectRatio } from "@mantine/core";
+import Link from 'next/link';
 
 type ProjectCardProps = {
     isSp: boolean;
@@ -9,16 +10,19 @@ type ProjectCardProps = {
     imageURL: string;
     description: string;
     tags: string[];
+    link: string;
 };
 
-const ProjectCard = ({ isSp, isExit, title, affiliation, imageURL, description, tags }: ProjectCardProps) => {
+const ProjectCard = ({ isSp, isExit, title, affiliation, imageURL, description, tags, link }: ProjectCardProps) => {
     if (isSp) {
         return (
             <Flex
                 direction={"column"}
                 align={"flex-start"}
                 gap={"50"}
-                className="mb-8 transition duration-300 ease-in-out transform hover:bg-slate-800 hover:shadow-lg hover:scale-[1.02] rounded-2xl p-4 group"
+                className="mb-8 transition duration-300 ease-in-out transform hover:bg-slate-800 hover:shadow-lg hover:scale-[1.02] rounded-3xl p-4 group"
+                component={Link}
+                href={link}
             >
                 <div className="">
                     {isExit && <Badge color="orange">🚀 Exit</Badge>}
@@ -39,14 +43,14 @@ const ProjectCard = ({ isSp, isExit, title, affiliation, imageURL, description, 
                     </div>
                 </div>
                 <div className="">
-                    <AspectRatio ratio={1600 / 900} maw={300} mx="auto">
+                    <AspectRatio ratio={1600 / 900} maw={300} mx="auto" >
                         <img
                             src={imageURL}
                             alt="project image"
                         />
                     </AspectRatio>
                 </div>
-            </Flex>
+            </Flex >
         );
     } else {
         return (
@@ -54,9 +58,11 @@ const ProjectCard = ({ isSp, isExit, title, affiliation, imageURL, description, 
                 direction={"row"}
                 align={"flex-start"}
                 gap={"50"}
-                className="mb-8 transition duration-300 ease-in-out transform hover:bg-slate-800 hover:shadow-lg hover:scale-[1.02] rounded-2xl p-4 group"
+                className="mb-8 mr-4 transition duration-300 ease-in-out transform hover:bg-slate-800 hover:shadow-lg hover:scale-[1.02] rounded-2xl p-4 group"
+                component={Link}
+                href={link}
             >
-                <div className="w-1/4">
+                <div className="w-1/4 ml-4">
                     <AspectRatio ratio={1600 / 900} maw={300} mx="auto">
                         <img
                             src={imageURL}

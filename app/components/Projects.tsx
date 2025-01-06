@@ -12,6 +12,26 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
             <ProjectCard
                 isSp={isSp}
                 isExit={false}
+                title="Midnight Technologies LP"
+                affiliation="Solo Project"
+                imageURL="./assets/midnight-technologies.png"
+                description="Midnight Technologies specializes in developing innovative digital solutions that transform ideas into reality."
+                tags={["TypeScript", "Next.js", "Vercel"]}
+                link={"https://www.midnight-technologies.com/"}
+            />
+            <ProjectCard
+                isSp={isSp}
+                isExit={false}
+                title="Clone X"
+                affiliation="Solo Project"
+                imageURL="./assets/clonex.png"
+                description="Clone X is a platform where you can share and submit ideas for apps or web services you'd like to clone. Leveraging the power of generative AI, it aims to bring customized clone apps to life. Clone X lets you share app ideas by submitting names, features, and customization concepts for clones. You can explore submissions, vote for your favorites, and provide feedback through comments. Popular ideas are highlighted based on community engagement, making it easy to turn your dream apps into reality."
+                tags={["TypeScript", "Astro", "Vercel"]}
+                link={"https://clone-nnmi521c5-0xwatas-projects.vercel.app/"}
+            />
+            <ProjectCard
+                isSp={isSp}
+                isExit={false}
                 title="ONIGIRI Chain"
                 affiliation="Associated with SARAH, Inc."
                 imageURL="./assets/onigirichain.png"
@@ -19,6 +39,7 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
         A Blockchain Specialized in Food and Healthcare.
         ONIGIRI Chain is a blockchain dedicated to collecting and storing information on food and healthcare. By centralizing a wide range of consumer behavior data on the blockchain, it aims to become the protocol for food and healthcare data, serving as a foundation for creating new value."
                 tags={["Blockchain", "Avalanche", "AvaCloud", "SubQuery", "AWS CDK", "AWS ECS", "AWS ECR"]}
+                link={"https://www.ongr.org/"}
             />
             <ProjectCard
                 isSp={isSp}
@@ -28,6 +49,7 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
                 imageURL="./assets/aiproductreport.png"
                 description="The AI Trend Report is a website that provides the latest trends and information about artificial intelligence in Japanese. This project comprehensively covers domestic and international AI news, trend analyses, and practical use cases, regularly updating content. It aims to offer opportunities for technicians, business professionals, researchers, and AI enthusiasts to deepen their understanding of AI technological advancements and their impacts."
                 tags={["Python", "Supabase", "Google App Script", "ChatGPT", "Substack", "Stripe"]}
+                link={"https://aitrendreport.jp/"}
             />
             <ProjectCard
                 isSp={isSp}
@@ -37,6 +59,7 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
                 imageURL="./assets/acejob.png"
                 description="AceJob is a platform that helps companies optimize their recruiting processes by automating and streamlining various tasks. It offers solutions for managing job posts, candidate screening, and application tracking, reducing manual work and improving efficiency in the hiring pipeline. The service integrates seamlessly with existing tools and aims to enhance the overall recruitment experience for both employers and candidates"
                 tags={["Typescript", "ChatGPT", "Claude", "AWS CDK", "AWS ECS", "AWS Lambda", "Next.js", "React", "Prisma"]}
+                link={"https://lp.acejob.jp/"}
             />
             <ProjectCard
                 isSp={isSp}
@@ -50,6 +73,7 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
 
         During development, I addressed performance issues, including slow API response times and high query complexity. I tackled this by splitting the queries into FirstView-required data and eliminating over-fetching, reducing query complexity from 1500 to 750 and halving response times. Since this was a video streaming app, my focus was on improving the user experience leading up to video playback, ensuring smooth performance for users."
                 tags={["Android", "KMM", "Jetpack Composer", "GraphQL", "Google Play Billing Library", "Firebase", "Looker Studio", 'Performance Optimization']}
+                link={"https://tv.dmm.com/vod/"}
             />
             <ProjectCard
                 isSp={isSp}
@@ -67,6 +91,7 @@ const Projects: React.FC<ProjectsProps> = ({ isSp }) => {
 
         ’Multi-lingua-body’ was also exhibited at SIGGRAPH ASIA 2022, where it received much recognition for its innovative approach."
                 tags={["Interactive Art", "NLP", "Python", "SIGGRAPH"]}
+                link={"https://www.youtube.com/watch?v=gAHZntU8ME4"}
             />
         </div>
     );

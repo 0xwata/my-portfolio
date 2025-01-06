@@ -28,6 +28,8 @@ const PcComponent: React.FC = () => {
                                 <Space h="20" />
                                 <InternalGuide title="PROJECTS" id="#projects" />
                                 <Space h="20" />
+                                <InternalGuide title="BLOG" id="#blog" />
+                                <Space h="20" />
                                 <ExternalGuide title="CHECKLIST" link="https://good-waxflower-f75.notion.site/2b6aa9705b664694903d9e481447d576?v=a096d492be9241efa948415548f861b8" />
                             </div>
                         </section>
